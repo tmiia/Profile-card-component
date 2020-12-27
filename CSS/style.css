@@ -1,0 +1,122 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+/*BACKGROUND*/
+#circle-top{
+    position: absolute;
+    top: -65%;
+    left: -15%;
+}
+#circle-bottom{
+    position: absolute;
+    bottom: -85%;
+    right: -10%;
+}
+/*CARD*/
+.card{
+    z-index: 1;
+    width: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5em hsl(227, 10%, 46%);
+}
+/*ENTETE CARD*/
+.entete{
+    height: 35%;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+/*PROFILE CARD*/
+.profile{
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.name{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    margin-top: 20px;
+}
+.age{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+.city{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    margin-top: 10px;
+}
+#picture{
+    position: absolute;
+    border: solid 5px #fff;
+    border-radius: 100px;
+    top: -55px;
+}
+/*STATS CARD*/
+.stats{
+    height: 25%;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-top: solid 1px hsl(0, 0%, 59%);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.stats > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stats h2{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+.stats p{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 11px;
+    color: hsl(227, 10%, 46%);
+    margin-top: 5px;
+}
+/*FOOTER*/
+footer{
+    position: fixed;
+    bottom: 0;
+}
+footer p{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: hsl(229, 23%, 23%);
+}
